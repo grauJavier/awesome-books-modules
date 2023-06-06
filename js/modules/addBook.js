@@ -28,7 +28,7 @@ function storageAvailable(type) {
   }
 }
 
-export default function addBook() {
+const addBook = () => {
   const titleInp = document.querySelector('#add-book__title');
   const authorInp = document.querySelector('#add-book__author');
   const bookList = JSON.parse(localStorage.getItem('bookShelfData')) || [];
@@ -49,4 +49,6 @@ export default function addBook() {
   } else {
     console.log('ERROR: Localstorage not aviable.');
   }
-}
+};
+
+export default addBook;

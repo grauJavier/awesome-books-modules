@@ -1,4 +1,4 @@
-export default function roundCorners() {
+const roundCorners = () => {
   const titleCellArr = document.querySelectorAll('#book__title') || [];
   const buttonCellArr = document.querySelectorAll('#book__remove-button') || [];
 
@@ -21,4 +21,6 @@ export default function roundCorners() {
       buttonCellArr[i].style = 'border-radius: 0;';
     }
   }
-}
+};
+
+export default roundCorners;

@@ -2,7 +2,7 @@ import removeData from './removeData.js';
 import emptyMessage from './emptyMessage.js';
 import roundCorners from './roundCorners.js';
 
-export default function printHTML(title, author, bookID) {
+const printHTML = (title, author, bookID) => {
   const bookshelf = document.querySelector('#books-listed__body');
 
   bookshelf.insertAdjacentHTML(
@@ -27,4 +27,6 @@ export default function printHTML(title, author, bookID) {
     emptyMessage();
     roundCorners();
   });
-}
+};
+
+export default printHTML;
