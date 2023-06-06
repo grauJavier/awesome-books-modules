@@ -1,7 +1,7 @@
 import addBook from './addBook.js';
 import emptyMessage from './emptyMessage.js';
 
-export default function addButton() {
+const addButton = () => {
   const addButtonHTML = document.querySelector('#add-book__form');
 
   addButtonHTML.addEventListener('submit', (event) => {
@@ -10,4 +10,6 @@ export default function addButton() {
     emptyMessage();
     addButtonHTML.reset();
   });
-}
+};
+
+export default addButton;

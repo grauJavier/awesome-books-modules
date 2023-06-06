@@ -4,7 +4,7 @@ import roundCorners from './roundCorners.js';
 
 const bookList = JSON.parse(localStorage.getItem('bookShelfData')) || [];
 
-export default function bookshelfLoader() {
+const bookshelfLoader = () => {
   emptyMessage();
 
   for (let i = 0; i < bookList.length; i += 1) {
@@ -12,4 +12,6 @@ export default function bookshelfLoader() {
   }
 
   roundCorners();
-}
+};
+
+export default bookshelfLoader;

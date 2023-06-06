@@ -1,4 +1,4 @@
-export default function emptyMessage() {
+const emptyMessage = () => {
   const textEmpty = document.querySelector('#books-listed__text-empty');
   if (
     localStorage.bookShelfData === '[]'
@@ -8,4 +8,6 @@ export default function emptyMessage() {
   } else {
     textEmpty.classList.replace('d-block', 'd-none');
   }
-}
+};
+
+export default emptyMessage;

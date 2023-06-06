@@ -1,6 +1,6 @@
 import { DateTime } from './luxon.js';
 
-export default function dateTime() {
+const dateTime = () => {
   const headerDate = document.querySelector('#header__date');
   const innerText = DateTime.now().setLocale('en').toLocaleString({
     year: 'numeric',
@@ -11,4 +11,6 @@ export default function dateTime() {
   });
 
   headerDate.textContent = innerText;
-}
+};
+
+export default dateTime;

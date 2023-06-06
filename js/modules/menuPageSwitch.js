@@ -1,4 +1,4 @@
-export default function menuPageSwitch() {
+const menuPageSwitch = () => {
   const listButton = document.querySelector('#menu__list');
   const addNewButton = document.querySelector('#menu__add-new');
   const contactButton = document.querySelector('#menu__contact');
@@ -28,4 +28,6 @@ export default function menuPageSwitch() {
   });
 
   displaySwitch(0);
-}
+};
+
+export default menuPageSwitch;
